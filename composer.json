@@ -1,1 +1,5 @@
-{}
+{
+    "require": {
+        "wp-graphql/wp-graphql-acf": "^0.5.3"
+    }
+}
