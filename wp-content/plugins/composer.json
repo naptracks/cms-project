@@ -1,0 +1,34 @@
+{
+  "name": "wpgrapql",
+  "type": "project",
+  "license": "proprietary",
+  "config": {
+    "preferred-install": "dist",
+    "vendor-dir": "mu-plugins/app/vendor"
+  },
+  "extra": {
+    "installer-paths": {
+      "mu-plugins/{$name}/": [
+        "type:wordpress-muplugin",
+        "wp-graphql/wp-graphql",
+        "wp-graphql/wp-graphiql"
+      ]
+    }
+  },
+  "repositories": [
+    {
+      "type": "github",
+      "url": "https://github.com/wp-graphql/wp-graphql"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/wp-graphql/wp-graphiql"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "composer/installers": "^1.5",
+    "wp-graphql/wp-graphql": "^0.8.0",
+    "wp-graphql/wp-graphiql": "^1.0"
+  }
+}

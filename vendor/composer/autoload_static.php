@@ -6,10 +6,21 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitaaffc98a751768eda32ba24fccaf897f
 {
+    public static $files = array (
+        'a3ed03db03d57650e139da3e8903943c' => __DIR__ . '/..' . '/wp-graphql/wp-graphql/access-functions.php',
+        'f23fb2f3f8f0b37aeaa2e54bba971cf2' => __DIR__ . '/..' . '/wp-graphql/wp-graphql/activation.php',
+        '041a301cb7808aeb8a9086a5113fbadc' => __DIR__ . '/..' . '/wp-graphql/wp-graphql/deactivation.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
             'WPGraphQL\\ACF\\' => 14,
+            'WPGraphQL\\' => 10,
+        ),
+        'G' => 
+        array (
+            'GraphQL\\' => 8,
         ),
     );
 
@@ -18,10 +29,24 @@ class ComposerStaticInitaaffc98a751768eda32ba24fccaf897f
         array (
             0 => __DIR__ . '/..' . '/wp-graphql/wp-graphql-acf/src',
         ),
+        'WPGraphQL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wp-graphql/wp-graphql/src',
+        ),
+        'GraphQL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webonyx/graphql-php/src',
+        ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'GraphQLRelay\\Connection\\ArrayConnection' => __DIR__ . '/..' . '/ivome/graphql-relay-php/src/Connection/ArrayConnection.php',
+        'GraphQLRelay\\Connection\\Connection' => __DIR__ . '/..' . '/ivome/graphql-relay-php/src/Connection/Connection.php',
+        'GraphQLRelay\\Mutation\\Mutation' => __DIR__ . '/..' . '/ivome/graphql-relay-php/src/Mutation/Mutation.php',
+        'GraphQLRelay\\Node\\Node' => __DIR__ . '/..' . '/ivome/graphql-relay-php/src/Node/Node.php',
+        'GraphQLRelay\\Node\\Plural' => __DIR__ . '/..' . '/ivome/graphql-relay-php/src/Node/Plural.php',
+        'GraphQLRelay\\Relay' => __DIR__ . '/..' . '/ivome/graphql-relay-php/src/Relay.php',
         'WPGraphQL\\ACF\\ACF' => __DIR__ . '/..' . '/wp-graphql/wp-graphql-acf/src/class-acf.php',
         'WPGraphQL\\ACF\\ACF_Settings' => __DIR__ . '/..' . '/wp-graphql/wp-graphql-acf/src/class-acfsettings.php',
         'WPGraphQL\\ACF\\Config' => __DIR__ . '/..' . '/wp-graphql/wp-graphql-acf/src/class-config.php',

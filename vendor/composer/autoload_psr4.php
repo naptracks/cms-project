@@ -7,4 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'WPGraphQL\\ACF\\' => array($vendorDir . '/wp-graphql/wp-graphql-acf/src'),
+    'WPGraphQL\\' => array($vendorDir . '/wp-graphql/wp-graphql/src'),
+    'GraphQL\\' => array($vendorDir . '/webonyx/graphql-php/src'),
 );

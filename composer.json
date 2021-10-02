@@ -1,5 +1,6 @@
 {
     "require": {
-        "wp-graphql/wp-graphql-acf": "^0.5.3"
+        "wp-graphql/wp-graphql-acf": "^0.5.3",
+        "wp-graphql/wp-graphql": "^1.6"
     }
 }
